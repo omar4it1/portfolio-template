@@ -14,7 +14,8 @@ FiLinkedin
 import { useTheme } from "../../context/ThemeContext"
 
 import PROFILE_PIC from '../../assets/images/profile_pic.png'
-import { containerVariants,itemVariants } from "../../utils/helper"  
+import { containerVariants,itemVariants } from "../../utils/helper" 
+import { HERO_DATA } from "../../utils/data"; 
 const HeroSection = () => {
   const { isDarkMode } = useTheme();
 
@@ -129,7 +130,7 @@ const HeroSection = () => {
                 variants={itemVariants}
                 className={`text-sm uppercase tracking-widest ${isDarkMode ? "text-gray-400" : "text-gray-600"}mb-4`}
               >
-                Staff Software Engineer
+                {HERO_DATA.title}
               </motion.div>
               <motion.h1
                 variants={itemVariants}
@@ -152,9 +153,7 @@ const HeroSection = () => {
                 className={`text-base md:text-lg ${isDarkMode ? "text-gray-400" : "text-gray-600"
                   }mb-8 max-w-xl mx-auto font-light leading-relaxed`}
               >
-                I am a passionate Full Stack Developer with experience in building
-                web applications using modern technologies. I love creating beautiful
-                and functional digital experiences that solve real-world problems.
+                {HERO_DATA.description}
               </motion.p>
               {/* Call-to-Action Buttons-Mobile */}
               <motion.div
@@ -253,7 +252,7 @@ const HeroSection = () => {
                 variants={textVariants}
                 className={`text-sm uppercase tracking-widest ${isDarkMode ? "text-gray-400" : "text-gray-600"}mb-4`}
               >
-                Staff Software Engineer
+                {HERO_DATA.title}
               </motion.div>
               <motion.h1
                 variants={itemVariants}
@@ -280,10 +279,7 @@ const HeroSection = () => {
                 className={`text-xl ${isDarkMode ? "text-gray-400" : "text-gray-600"
                   } mb-12 font-light leading-relaxed max-w-2xl`}
               >
-                Staff-level backend engineer with extensive experience in Go, Java, and cloud-native systems. Expert in
-                microservices, Kubernetes, event-driven architecture, and CI/CD. Known for delivering reliable MVPs, improving
-                code quality through testing and DDD, mentoring teams, and building scalable systems across fintech, payments,
-                and platform engineering.
+                {HERO_DATA.description}
               </motion.p>
               {/* Call-to-Action Buttons-Desktop */}
               <motion.div variants={itemVariants} className="flex gap-6 mb-8">
