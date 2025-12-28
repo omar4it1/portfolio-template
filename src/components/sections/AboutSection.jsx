@@ -3,6 +3,7 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useTheme } from "../../context/ThemeContext";
 import { WORK_EXPERIENCE, PASSIONS } from "../../utils/data";
 import { containerVariants, itemVariants } from "../../utils/helper";
+import LanguagesSection from "./LanguagesSection";
 const AboutSection = () => {
   const { isDarkMode } = useTheme();
   const sectionRef = useRef(null);
@@ -256,6 +257,7 @@ const AboutSection = () => {
 
 
       </div>
+      <LanguagesSection></LanguagesSection>
     </section>
   );
 };

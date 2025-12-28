@@ -354,12 +354,38 @@ export const EDUCATION = [
 ];
 export const LANGUAGES = [
     {
-        English: "Fluent C1",
-        Urdu:   "Native", 
-        Hindi: "Native",
-        German: "intermediate - B1",
+     id: "english",
+     language: "English",
+     level: "C1"
+    },
+    {
+       id: "urdu",
+     language: "Urdu",
+     level: "Bilingual"
+    },
+    {
+       id: "german",
+     language: "German",
+     level: "B1"
     }
-]
+];
+
+
+export const CERTIFICATIONS = [
+    {
+        id: "ckad",
+        name: "CKAD",
+        provider: "The Linux Foundation",
+        credential: "https://www.credly.com/badges/4fe371d2-27c3-4398-92ba-ae5ecef2f8cc/linked_in_profile"
+    },
+    {
+        id: "cka",
+        name: "CKA",
+        provider: "The Linux Foundation",
+        credential: "https://www.credly.com/badges/4fe371d2-27c3-4398-92ba-ae5ecef2f8cc/linked_in_profile"
+    }
+];
+
 export const CONTACT_INFO = [
     {
         label: "Phone",

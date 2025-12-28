@@ -4,16 +4,16 @@ import { LANGUAGES } from "../../utils/data"
 import { itemVariants } from '../../utils/helper';
 const LanguagesSection = () => {
   return (
-    <div>Languages</div>
-    {LANGUAGES.map((lan, index) => (
-        <div>{lan}</div>
-
-    ))} 
+    <section>
+      <div>Languages</div>
+      <ul>
+      {LANGUAGES.map((lang, index) => (
+        <li key={lang.id}>{lang.language} {lang.level}</li>
+      ))}
+      </ul>
+    </section>
     
-        
- 
-
-  )
-}
+  );
+};
 
 export default LanguagesSection
