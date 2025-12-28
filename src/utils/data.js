@@ -137,7 +137,6 @@ export const TECH_STACK = [
     "NATS",
     "Docker",
     "kubernetes",
-    "Terraform",
     "EDA",
     "Microservices",
     "Java 8",
@@ -183,7 +182,7 @@ export const PROJECTS = [
 ];
 export const WORK_EXPERIENCE = [
     {
-        year: "2022 - Present",
+        year: "06/2025 - Present",
         title: "Staff Software Engineer",
         company: "IONOS SE",
         icon: Code2,
@@ -248,7 +247,8 @@ export const WORK_EXPERIENCE = [
     {
         year: "08/2019 - 09/2020",
         title: "Senior Software Engineer",
-        company: "Smava GmbH, Berlin Germany (https://www.smava.de/)",
+        company: "Smava GmbH, Berlin Germany",
+        website: "https://www.smava.de/",
         icon: Code2,
         color: "bg-purple-500",
         position: "Senior Software Engineer",
@@ -262,7 +262,8 @@ export const WORK_EXPERIENCE = [
     {
         year: "06/2018 - 07/2019",
         title: "Senior Software Engineer",
-        company: "Auto1 Group GmbH, Berlin Germany (https://www.auto1-group.com/)",
+        company: "Auto1 Group GmbH, Berlin Germany",
+        website: "https://www.auto1-group.com/",
         icon: Code2,
         color: "bg-purple-500",
         position: "Senior Software Engineer",

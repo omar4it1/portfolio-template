@@ -203,7 +203,10 @@ const AboutSection = () => {
                       </span>
                     </div>
                     <div className={`text-sm font-medium ${isDarkMode ? "bg-blue-400" : "text-blue-600"} mb-3`}>
+                      <a href={exp.website}>
                       {exp.company}
+                       </a>   
+
                     </div>
                       <ul className={`text-sm lending-relaxed list-outside pl-5 space-y-2  ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
                       {exp.responsibilities.map((resp, idx) => (
@@ -212,6 +215,9 @@ const AboutSection = () => {
                         </li>
                       ))}
                       </ul>
+                      <div>
+                        {exp.Technologies}
+                      </div>
                   </div>
                 </motion.div>
               ))}
