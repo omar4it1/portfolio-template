@@ -205,7 +205,7 @@ const AboutSection = () => {
                     <div className={`text-sm font-medium ${isDarkMode ? "bg-blue-400" : "text-blue-600"} mb-3`}>
                       {exp.company}
                     </div>
-                      <ul className={`text-sm lending-relaxed list-disc pl-5 space-y-2  ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
+                      <ul className={`text-sm lending-relaxed list-outside pl-5 space-y-2  ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
                       {exp.responsibilities.map((resp, idx) => (
                         <li key={idx}>
                           {resp}
