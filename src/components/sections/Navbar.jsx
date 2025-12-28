@@ -15,7 +15,7 @@ const Navbar = () => {
                 }
         };
 
-        const sections = ['home','skills','about','view work','contact'];
+        const sections = ['home','skills','work','about','contact'];
 
         return (
             <motion.nav

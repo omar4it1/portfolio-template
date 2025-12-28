@@ -187,7 +187,28 @@ const scrollY = useTransform(scrollYProgress, [0, 1], [0, -50]);
                 Designed with care 
                 </p>    
             </motion.div>
-
+            {/*Back TO Top*/}
+            <motion.div variants={itemVariants}>
+                <motion.button
+                    onClick={scrollToTop}
+                    className={`inline-flex items-center space-x-2 px-4 py-4 rounded-full text-sm font-medium transition-all duration-300 ${
+                        isDrakMode 
+                        ? 'bg-gray-800/50 hover:bg-gray-700/50 text-gray-400 hover:text-white'
+                        : 'bg-gray-100/50 hover:bg-gray-200/50 text-gray-600 hover:text-gray-900'
+                    } backdrop-blur-sm border ${isDrakMode ? 'border-gray-700' : 'border-gray-300'}`}
+                    whileHover={{
+                        y: -2,
+                        scale: 1.05,
+                        boxShadow: isDrakMode
+                        ? "0 10px 25px rgba(59, 130, 246, 0.15)"
+                        : "0 10px 25px rgba(59, 130, 246, 0.1)" 
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                    >
+                        <ArrowUp size={16} />
+                        <span>Back To Top</span>
+                    </motion.button>    
+                </motion.div>
         </div>
         </div>
     </footer>                
