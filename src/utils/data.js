@@ -41,19 +41,20 @@ export const SKILLS_CATEGORY = [
     {
         title: "Programming Languages",
         icons: Code2,
-        description: "Technologies I use for building the client-side of applications.",
+        description: "High-performance languages for modern application development",
         skills: [
             { name: "Golang", level: 88, proficiency: "Expert" },
             { name: "Java (Spring framework, JPA, Cloud, Data, Spring security)", level: 85, proficiency: "Expert" },
             { name: "Kotlin", level: 85, proficiency: "Expert" },
             { name: "Javascript (jQuery, VueJS, Angular, Rect.js)", level: 85, proficiency: "Expert" },
             { name: "Python (Flask, Django), C/C++", level: 85, proficiency: "Expert" },
+            { name: "C/C++", level: 85, proficiency: "Expert" },
         ],
     },
     {
         title: "Software Development",
         icons: Briefcase,
-        description: "Technologies I use for building the server-side of applications.",
+        description: "Languages driving robust backend and cloud-native solutions",
         skills: [
             { name: "Object Oriented Design", level: 90, proficiency: "Intermediate" },
             { name: "Microservices Architecture", level: 75, proficiency: "Intermediate" },
@@ -67,7 +68,7 @@ export const SKILLS_CATEGORY = [
     {
         title: "Version Control & CI/CD",
         icons: Briefcase,
-        description: "Technologies I use for building the server-side of applications.",
+        description: "Automated build & deployment workflows",
         skills: [
             { name: "Git", level: 90, proficiency: "Intermediate" },
             { name: "Jenkins", level: 75, proficiency: "Intermediate" },
@@ -79,7 +80,7 @@ export const SKILLS_CATEGORY = [
     {
         title: "Tools and Technologies",
         icons: Briefcase,
-        description: "Technologies I use for building the server-side of applications.",
+        description: "Engineering efficiency through proven DevOps technologies",
         skills: [
             { name: "Docker", level: 90, proficiency: "Intermediate" },
             { name: "Kubernetes", level: 75, proficiency: "Intermediate" },
@@ -93,7 +94,7 @@ export const SKILLS_CATEGORY = [
     {
         title: "Cloud Platform",
         icons: Briefcase,
-        description: "Technologies I use for building the server-side of applications.",
+        description: "Building cloud-native solutions across AWS, Azure, and GCP",
         skills: [
             { name: "Amazon Web Services(EC2, RDS, ECS, S3, etc.)", level: 90, proficiency: "Intermediate" },
             { name: "Microsoft Azure", level: 75, proficiency: "Intermediate" },
@@ -103,7 +104,7 @@ export const SKILLS_CATEGORY = [
     {
         title: "Databases",
         icons: Briefcase,
-        description: "Technologies I use for building the server-side of applications.",
+        description: "Data persistence optimized for speed, reliability, and growth",
         skills: [
             { name: "RDBMS(Postgres, Mysql, Oracle, CockroachDB)", level: 90, proficiency: "Intermediate" },
             { name: "Nosql(Redis, Mongodb, Elasticsearch, Cassandra)", level: 75, proficiency: "Intermediate" },
@@ -112,7 +113,7 @@ export const SKILLS_CATEGORY = [
     {
         title: "Messaging Queue",
         icons: Briefcase,
-        description: "Technologies I use for building the server-side of applications.",
+        description: "The easy button for complex systems.",
         skills: [
             { name: "RabbitMQ", level: 90, proficiency: "Intermediate" },
             { name: "Kafka (stream)", level: 75, proficiency: "Intermediate" },
@@ -121,30 +122,15 @@ export const SKILLS_CATEGORY = [
     },
 ];
 export const TECH_STACK = [
-    "Golang",
-    "JavaScript",
-    "Grpc",
-    "AWS(EC2, S3, ECS, Lambda)",
-    "ECS",
-    "Terraform",
-    "Kafka",
-    "Redis",
-    "PostgreSQL",
-    "Vault",
-    "Java 11(Spring framework)",
-    "Postgres",
-    "CockroachDB",
-    "NATS",
-    "Docker",
-    "kubernetes",
-    "EDA",
-    "Microservices",
-    "Java 8",
-    "Python",
-    "Javascript(VueJS)",
-    "GraphQL",
-    "Keycloak",
-    "Java(Spring Boot, Spring Cloud, Spring Data, Spring Security)",
+    "Core Programming Stack",
+    "Backend & Architecture Stack",
+    "Frontend Engineering Stack",
+    "Cloud & Infrastructure Stack",
+    "DevOps & CI/CD Stack",
+    "Observability & Monitoring Stack",
+    "Database & Storage Stack",
+    "Messaging & Streaming Stack",
+    "Version Control & Collaboration",
 
 ];
 export const STATS = [
@@ -185,6 +171,7 @@ export const WORK_EXPERIENCE = [
         year: "06/2025 - Present",
         title: "Staff Software Engineer",
         company: "IONOS SE",
+        website: "https://www.linkedin.com/company/ionos/",
         icon: Code2,
         color: "bg-blue-500",
         position: "Frontend Developer",
@@ -195,6 +182,7 @@ export const WORK_EXPERIENCE = [
             "Collaborated with cross-functional teams to define, design, and ship new features.",
             "Optimized applications for maximum speed and scalability.",
         ],
+        Technologies: ""
     },
     {
         year: "05/2024 - 05/2025",
@@ -212,12 +200,14 @@ export const WORK_EXPERIENCE = [
             "Set up Observability & Monitoring using OpenTelemetry, Prometheus, and Grafana to enhance system reliability and performance insights.",
             "Optimized cloud infrastructure costs by analyzing resource usage and proposing cost-efficient strategies.",
         ],
+        Technologie: "Technologies",
         Technologies: "Golang, Grpc, AWS, ECS, Terraform, Kafka, Redis, PostgreSQL, Vault",
     },
     {
         year: "04/2022 - 03/2024",
         title: "Senior Software Engineer",
         company: "Form3 Technologies",
+        website: "https://www.form3.tech/",
         icon: Code2,
         color: "bg-green-500",
         position: "Senior Software Engineer",
@@ -228,11 +218,14 @@ export const WORK_EXPERIENCE = [
             "Proactively identified and implemented strategic improvements in the testing suite, achieving a significant reduction in test runtime by up to 20%, thereby enhancing efficiency and productivity.",
             "Developed and deployed advanced monitoring dashboards and alert systems, significantly enhancing real-time oversight and support for on-call engineers, leading to faster issue resolution and improved system reliability.",
         ],
+        Technologie: "Technologies",
+        Technologies: "Golang, Java 11(Spring framework), Postgres, CockroachDB, Redis, NATS, Docker, kubernetes, AWS, Terraform, Vault, Microservices, EDA",
     },
     {
         year: "11/2020 - 03/2022",
         title: "Senior Software Engineer",
         company: "Unfold Gaming, Berlin Germany",
+        website: "https://www.unfold.net/",
         icon: Code2,
         color: "bg-purple-500",
         position: "Senior Software Engineer",
@@ -243,6 +236,8 @@ export const WORK_EXPERIENCE = [
             "Spearheaded the overhaul of legacy codebases, aligning them with modern development standards. This strategic refactoring resulted in a 50% reduction in effort required for onboarding new games, concurrently slashing operating costs and significantly boosting system functionality.",
             "Led the backend development of three of the company's most complex games, showcasing advanced technical acumen. Simultaneously, I enhanced the testing framework, enabling robust support for new features, thereby ensuring seamless integration and optimal performance.",
         ],
+        Technologie: "Technologies",
+        Technologies: "Java 8, Golang, Kotlin, Python, Javascript(VueJS), GraphQL, Keycloak",
     },
     {
         year: "08/2019 - 09/2020",
@@ -258,6 +253,8 @@ export const WORK_EXPERIENCE = [
             "Revamped and modularized the offer page, optimizing its presentation time, which directly contributed to a notable 30% increase in customer retention by enhancing user experience and engagement.",
             "Successfully integrated a sophisticated third-party Video Identification system to streamline the checkout process, markedly enhancing the customer experience and increasing transactional efficiency.",
         ],
+        Technologie: "Technologies",
+        Technologies: "Java(Spring Boot, Spring Cloud, Spring Data, Spring Security), Docker, AWS(EC2, S3, ECS, Lambda), RabbitMQ, Postgres, Redis, Microservices, EDA",
     },
     {
         year: "06/2018 - 07/2019",
@@ -274,11 +271,14 @@ export const WORK_EXPERIENCE = [
             "Successfully unified legacy and contemporary search microservices, achieving a substantial reduction in the maintenance costs of the search module while ensuring seamless functionality and system reliability.",
             "Advanced the user interface by enhancing search filters and refining the relevance algorithm on car search pages, leading to a more intuitive and efficient user experience, and thereby increasing user engagement and satisfaction.",
         ],
+        Technologie: "Technologies",
+        Technologies: "Java(Spring Boot, Spring cloud, Spring Data), Postgres, Elasticsearch, Docker, AWS(EC2, S3, SQS, ECS, Lambda), Microservices",
     },
     {
         year: "03/2017 - 06/2018",
         title: "Lead Software Engineer",
-        company: "Emaratech FZ LLC, Dubai UAE (https://www.emaratech.ae/)",
+        company: "Emaratech FZ LLC, Dubai UAE",
+        website: "https://www.emaratech.ae/",
         icon: Code2,
         color: "bg-purple-500",
         position: "Lead Software Engineer",
@@ -289,11 +289,14 @@ export const WORK_EXPERIENCE = [
             "Collaborated with a team of engineers to design highly efficient database queries and robust schemas, significantly enhancing the analytics reporting capabilities, leading to more insightful data-driven decision-making processes.",
             "Innovatively designed and refined algorithms tailored to customer specifications and feedback, delivering solutions that significantly improved process efficiency and met diverse customer needs effectively.",
         ],
+        Technologie: "Technologies",
+        Technologies: "Java(Spring Boot, Spring Data, Spring Security), Python, Oracle, Elasticsearch",
     },
     {
         year: "02/2015 - 03/2017",
         title: "Solution Architect",
-        company: "Vodworks PS Limited, Lahore Pakistan. (http://www.vodworks.com/)",
+        company: "Vodworks PS Limited, Lahore Pakistan.",
+        website: "http://www.vodworks.com/",
         icon: Code2,
         color: "bg-purple-500",
         logo: brilliantgamezlabs_logo,
@@ -305,11 +308,14 @@ export const WORK_EXPERIENCE = [
             "Orchestrated and led comprehensive technical workshops and educational sessions for junior software engineers, fostering skill development and knowledge transfer, and contributing to the overall team's technical proficiency and growth.",
             "Skillfully presented detailed roadmaps and technology infrastructure plans to customers, showcasing in-depth expertise in APIs, platform infrastructure, security, and integration capabilities, thereby enhancing customer understanding and trust in our solutions.",
         ],
+        Technologie: "Technologies",
+        Technologies: "Java(Spring Boot, Spring Data, Spring Security), Postres, Elasticsearch, Redis, Cassendra, Docker, AWS",
     },
     {
         year: "03/2009 – 02/2015",
         title: "Principal Software Engineer",
-        company: "NorthBay Solutions Solutions (CDocs), Lahore Pakistan. (https://www.northbaysolutions.net/)",
+        company: "NorthBay Solutions Solutions (CDocs), Lahore Pakistan.",
+        website: "https://www.northbaysolutions.net/",
         icon: Code2,
         color: "bg-purple-500",
         position: "Principal Software Engineer",
@@ -321,6 +327,8 @@ export const WORK_EXPERIENCE = [
             "Led key software development initiatives as the subject matter expert, serving as the primary liaison between the technical team and project management staff, ensuring seamless communication and alignment of project goals and timelines.",
             "Implemented a rigorous peer code review process to effectively distribute error-checking responsibilities significantly enhancing the debugging process and improving the overall quality and reliability of the codebase.",
         ],
+        Technologie: "Technologies",
+        Technologies: "Java, Python, Javascript, Mysql, MongoDB, AWS, Heroku, Google App Engine",
     },
 ];
 export const PASSIONS = [
@@ -342,6 +350,7 @@ export const PASSIONS = [
 ];
 export const EDUCATION = [
     {
+        
         institution: "University of Punjab, Lahore, Pakistan.",
         degree: "M.Sc. (Computer Science)",
         duration: "",

@@ -4,6 +4,9 @@ import { useTheme } from "../../context/ThemeContext";
 import { WORK_EXPERIENCE, PASSIONS } from "../../utils/data";
 import { containerVariants, itemVariants } from "../../utils/helper";
 import LanguagesSection from "./LanguagesSection";
+import { LANGUAGES } from "../../utils/data"
+
+import EducationSection from "./EducationSection";
 const AboutSection = () => {
   const { isDarkMode } = useTheme();
   const sectionRef = useRef(null);
@@ -217,7 +220,9 @@ const AboutSection = () => {
                       ))}
                       </ul>
                       <div>
+                        <h4 className="text-xl font-medium">{exp.Technologie}</h4>
                         {exp.Technologies}
+                        
                       </div>
                   </div>
                 </motion.div>
@@ -255,9 +260,10 @@ const AboutSection = () => {
             </motion.div>
            </motion.div>   
 
-
+              <LanguagesSection/>
+              <EducationSection/>
       </div>
-      <LanguagesSection></LanguagesSection>
+      
     </section>
   );
 };
